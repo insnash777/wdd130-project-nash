@@ -17,3 +17,11 @@ nav {
     margin: 0px 200px;
     text-align: start;
 }
+.culture{
+    text-decoration: none;
+    color: black;
+}
+.culture:visited{
+    text-decoration: none;
+    color: black;
+}
