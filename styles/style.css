@@ -7,11 +7,10 @@
     padding: 50px;
 }
 nav {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    gap: 10px;
-    border-bottom: solid gray 1px;
-    padding-bottom: 30px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
 .description{
     margin: 0px 200px;
@@ -24,4 +23,99 @@ nav {
 .culture:visited{
     text-decoration: none;
     color: black;
+}
+
+.Biology{
+    text-decoration: none;
+    color: black;
+}
+.Biology:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* Moogle-inspired palette and layout */
+:root{
+    --bg: #fff6fb;
+    --card: #ffffff;
+    --accent: #e94b4b; /* pom-pom red */
+    --muted: #f6dce6; /* soft pink */
+    --dark: #2b2b36; /* wing/dark accent */
+    --text: #222233;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+    padding:30px 20px;
+    background: linear-gradient(180deg, var(--bg), #ffffff 60%);
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color:var(--text);
+}
+
+.header-inner{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background: transparent;
+    padding:20px;
+    border-radius:20px;
+}
+
+.moogle-art{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow: 0 8px 20px rgba(43,43,54,0.15);
+    border: 6px solid var(--muted);
+}
+
+.title-wrap h1{ 
+    margin:0 0 8px 0;
+    color:var(--dark);
+}
+
+nav a{
+    display:inline-block;
+    padding:8px 14px;
+    background:var(--muted);
+    color:var(--dark);
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:600;
+}
+
+nav a:hover{ background:var(--accent); color:white; }
+
+article{
+    text-align:left;
+    margin-top:18px;
+}
+
+section{
+    background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.95));
+    padding:20px 22px;
+    border-radius:12px;
+    margin-bottom:18px;
+    box-shadow: 0 6px 18px rgba(43,43,54,0.06);
+}
+
+h2{
+    color:var(--dark);
+    margin-top:0;
+    border-bottom:3px solid var(--muted);
+    padding-bottom:8px;
+}
+
+footer{
+    text-align:center;
+    margin-top:22px;
+    color: #666;
+}
+
+@media (max-width:700px){
+    .container{ max-width: 96%; padding:20px; }
+    .header-inner{ flex-direction:column; }
+    .moogle-art{ width:120px; height:120px; }
 }
