@@ -119,3 +119,15 @@ footer{
     .header-inner{ flex-direction:column; }
     .moogle-art{ width:120px; height:120px; }
 }
+
+.logo img{
+    max-width: 100px;
+}
+
+.cultmain {
+    text-align: center;
+}
+
+.cultmain img {
+    max-width: 40%;
+}
