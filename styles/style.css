@@ -12,7 +12,6 @@ nav {
     gap: 10px;
     border-bottom: solid gray 1px;
     padding-bottom: 30px;
-    align-items: center;
 }
 .description{
     margin: 0px 200px;
@@ -25,7 +24,4 @@ nav {
 .culture:visited{
     text-decoration: none;
     color: black;
-}
-.mainimg{
-    width: 100px;
 }
