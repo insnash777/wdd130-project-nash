@@ -36,22 +36,16 @@ nav {
 
 /* Moogle-inspired palette and layout */
 :root{
-    --bg: #fff6fb;
-    --card: #ffffff;
-    --accent: #e94b4b; /* pom-pom red */
-    --muted: #f6dce6; /* soft pink */
-    --dark: #2b2b36; /* wing/dark accent */
+    --bg: #F5E7D3; /* warm beige background */
+    
+    --green: #4A8F5A; /* vine / secondary */
+    --accent: #E64A4A; /* pom-pom red */
+    --blue: #7DB9D9; /* soft sky accent */
+    --dark: #2b2b36; /* dark accent */
     --text: #222233;
 }
 
-html,body{
-    height:100%;
-    margin:0;
-    padding:30px 20px;
-    background: linear-gradient(180deg, var(--bg), #ffffff 60%);
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color:var(--text);
-}
+
 
 .header-inner{
     display:flex;
@@ -68,7 +62,7 @@ html,body{
     object-fit:cover;
     border-radius:50%;
     box-shadow: 0 8px 20px rgba(43,43,54,0.15);
-    border: 6px solid var(--muted);
+    border: 6px solid var(--green);
 }
 
 .title-wrap h1{ 
@@ -79,7 +73,7 @@ html,body{
 nav a{
     display:inline-block;
     padding:8px 14px;
-    background:var(--muted);
+    background:var(--blue);
     color:var(--dark);
     text-decoration:none;
     border-radius:999px;
@@ -104,7 +98,7 @@ section{
 h2{
     color:var(--dark);
     margin-top:0;
-    border-bottom:3px solid var(--muted);
+    border-bottom:3px solid var(--blue);
     padding-bottom:8px;
 }
 
